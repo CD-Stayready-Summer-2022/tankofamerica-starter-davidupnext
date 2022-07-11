@@ -6,7 +6,7 @@ import com.codedifferently.tankofamerica.domain.exceptions.overDraftException;
 
 public interface AccountService {
     Account create(Long userId, Account account) throws UserNotFoundException;
-    Account getById(String id);
+    Account getById(String userid);
     String getAllFromUser(Long userId) throws UserNotFoundException;
     Account update(Account account);
     void withdraw(Long userid, Double withdrawAmount) throws overDraftException,UserNotFoundException;
